@@ -1,14 +1,3 @@
-"""
-window_topmost.py  —  窗口置顶工具 v10
-
-v10: 稳定版 - 纯 Tkinter，零 Win32 消息循环依赖
-  - 移除全局鼠标钩子（ACCESS_VIOLATION）
-  - 移除 pystray/PIL（无额外依赖）
-  - 移除系统托盘图标（避免 Win32 消息回调导致闪退/残留）
-  - 标准窗口 + 关闭按钮退出，简洁可靠
-  - 双击列表项切换置顶
-"""
-
 import tkinter as tk
 from tkinter import ttk
 import ctypes
