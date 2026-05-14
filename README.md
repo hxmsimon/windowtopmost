@@ -11,10 +11,6 @@
 - **一键取消全部** — 关闭程序时自动取消所有置顶，不留残留
 - **Catppuccin 暗色主题** — 护眼深色 UI
 
-## 📷 截图
-
-程序界面包含搜索栏、窗口列表和操作按钮，置顶的窗口会以绿色高亮显示。
-
 ## 🚀 使用
 
 ### 从源码运行
@@ -42,23 +38,5 @@ python window_topmost.py
 | **🔓 全部取消置顶** | 一键取消所有已置顶的窗口 |
 | **自动刷新** | 开启/关闭每 3 秒的自动列表刷新 |
 
-## 🛠 技术细节
-
-- **GUI**：Tkinter（Python 标准库），ttk.Treeview 列表
-- **窗口操作**：通过 ctypes 调用 Win32 API（`SetWindowPos`、`EnumWindows` 等）
-- **零外部依赖**：不依赖 pystray、PIL 或其他第三方包
-- **打包**：使用 PyInstaller `--onefile --windowed` 打包为单个 exe（约 11MB）
-
-## 📂 文件结构
-
-```
-WindowTopmost/
-├── window_topmost.py    # 主程序源码（唯一必需文件）
-├── README.md            # 项目说明
-└── dist/
-    └── WindowTopmost.exe  # 打包好的可执行文件
-```
-
-## 📋 License
 
 MIT
